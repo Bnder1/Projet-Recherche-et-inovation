@@ -70,3 +70,5 @@ La localisation et cartographie simultanées, connue en anglais sous le nom de S
 - [Formules et Principes PDF](http://devernay.free.fr/cours/vision/pdf/c4.pdf)
 
 - [SLAM](https://fr.wikipedia.org/wiki/Cartographie_et_localisation_simultan%C3%A9es)
+
+- [SLAM monoculaire](https://www.ensta-bretagne.fr/jaulin/rapport_pfe_amine_ouadrhiri.pdf)

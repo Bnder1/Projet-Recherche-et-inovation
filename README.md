@@ -2,7 +2,7 @@
 SLAM - détection de point d'intérêt par traitement d'image
 
 
-##Agile
+## Agile
 
 >Scrum ne se considère pas comme une méthode mais comme un cadre méthodologique.
 	
@@ -22,19 +22,19 @@ Scrum définit seulement 3 rôles :
 > Communication avant processus et dev. Faire des feedBack / visual management / découper / Infos
 
 
-###Risques
+### Risques
 - Metier -> On construit la bonne chose?
 - Social -> on peut la construire?
 - Technique -> ça fonctione?
 - Cout / delais
 
-###Roles
+### Roles
 
 - Rémi : Scrum master
 - Zac : Product owner
 - Guillaume / Fabien : équipe de recherche
 
-##Projet
+## Projet
 - 1.3 : SLAM - détection de point d'intérêt par traitement d'image
 Compétences principales travaillées: Vision par ordinateur, 
 

@@ -72,3 +72,5 @@ La localisation et cartographie simultanées, connue en anglais sous le nom de S
 - [SLAM](https://fr.wikipedia.org/wiki/Cartographie_et_localisation_simultan%C3%A9es)
 
 - [SLAM monoculaire](https://www.ensta-bretagne.fr/jaulin/rapport_pfe_amine_ouadrhiri.pdf)
+- [articles scientifique slam etc](https://hal.archives-ouvertes.fr/hal-00656572/document)
+- [comment écrire  un article scientifique](https://www.scribbr.fr/article-scientifique/ecrire-un-article-scientifique/)

@@ -13,10 +13,14 @@
 >Resume :
 
 ## Fabien
-- URL : http://eprints.lincoln.ac.uk/id/eprint/9566/1/mozos2008lncs_caepia.pdf
-		http://eprints.lincoln.ac.uk/id/eprint/9330/1/gil2009mva.pdf
+- URL : 1. http://eprints.lincoln.ac.uk/id/eprint/9566/1/mozos2008lncs_caepia.pdf
+		2. http://eprints.lincoln.ac.uk/id/eprint/9330/1/gil2009mva.pdf
 
 >Resume :
+>
+>The first document reports the comparison of several points of interest detection algorithms (Harris Corner Detector, Harris-Laplace, SIFT, SURF, SUSAN). The document conclude that each of this algorithms are equivalent but the **Harris Corner Detector** algorithm keep a higher numbers of point of interest between frames unlike others.
+>
+>The second document reports the comparison of several points of interest detection algorithms in order to use them in a SLAM.
 
 ## Zac
 

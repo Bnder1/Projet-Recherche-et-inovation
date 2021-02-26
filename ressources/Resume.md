@@ -7,9 +7,10 @@
 >Resume :
 
 ## Rémi
-- URL :
+- URL : https://hal.archives-ouvertes.fr/hal-00989067/
+		https://www.irit.fr/~Sylvie.Chambon/PUBLICATIONS/GalesRapportMaster2007.pdf
 
->Resume :
+>Resume : 
 
 ## Fabien
 - URL : http://eprints.lincoln.ac.uk/id/eprint/9566/1/mozos2008lncs_caepia.pdf

@@ -23,7 +23,16 @@
 - URL1 : https://hal.archives-ouvertes.fr/hal-00656572/document
 - URL2 :https://hal.archives-ouvertes.fr/tel-01713128
 
->Resume1 :
+>Resume1 :Cet article présente un système conçu pour traiter ensemble du SLAM, et de la Détection et du Suivi d’objets
+mobiles (DATMO), en exploitant uniquement la vision. Le
+but est de produire depuis des données visuelles, une description exploitable par un robot mobile, d’une scène dynamique : modélisation du monde statique, localisation du
+robot dans ce monde, et comment les autres objets mobiles
+s’y déplacent. Une approche combinant Segmentation par
+Clustering et Classification permet de détecter d’une part
+des points statiques pris en compte dans le SLAM visuel, et
+d’autre part des groupes de points mobiles exploités pour
+détecter et suivre les composantes dynamiques de la scène.
+L’approche globale est évaluée sur des bases d’images acquises en milieu urbain.
 
 
 >Resume2 :En raison de la demande croissante des systemes d’analyse video, la reconnaissance ainsi
@@ -35,7 +44,7 @@ Cette these vise a repondre a cette question en apportant une contribution dans 
 de detection et la phase de reconnaissance d’actions. Dans cet esprit, nous introduisons de
 nouvelles methodes de description de reconnaissance de l’action humaine.
 Pour la partie detection des actions, nous avons introduit deux approches basees sur
-les points d’interˆets locaux. La premiere proposition est une methode simple et efficace qui
+les points d’interets locaux. La premiere proposition est une methode simple et efficace qui
 vise a detecter les mouvements humains ensuite contribuer a extraire des sequences video
 decrivant des actions importantes. Afin d’atteindre cet objectif, les premieres sequences
 video sont segmentees en volumes de trames et groupes de points d'interet . Dans cette
@@ -53,15 +62,13 @@ segmente d’une manire spatio-temporelle afin de detecter le nombre optimal de 
 suffisant pour effectuer une description video.
 Pour ce qui est du volet de la description, nous avons propose dans cette these deux
 nouveaux descripteurs spatio-temporels. Ces descripteurs sont bases sur le suivi de la
-i
-ii RESUM  E
-trajectoire des points d’interˆet. Les suivis et la description video sont effectues sur les
+trajectoire des points d’interet. Les suivis et la description video sont effectues sur les
 patchs video qui contiennent un mouvement ou une partie d’un mouvement detecte par la
 segmentation realisee lors de l’etape precedante. Nous nous sommes base sur le descripteur
 SURF non seulement pour son efficacite et mais essentiellement pour la rapidite de son
 extraction. Le premier descripteur propose est appel ST-SURF, il est base sur une nouvelle
 combinaison du (SURF) et du flot optique. Le ST-SURF permet le suivi de la trajectoire
-des points d’interˆet tout en gardant les informations spatiales, pertinentes, provenant du
+des points d’interet tout en gardant les informations spatiales, pertinentes, provenant du
 SURF.
 Le deuxieme descripteur propose dans le cadre de cette these est un histogramme du
 mouvement de la trajectoire (HMTO). HMTO est base sur la position ainsi que l’echelle

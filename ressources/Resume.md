@@ -23,6 +23,8 @@ methodes de propagation de germes.
 
 2) 
 Ce papier présente un algorithme de localisation et cartographie simultanée (ou SLAM pour Simultaneous Localization And Mapping) utilisant des contraintes issues de modèles observés dans un environnement inconnu, on parle alors de SLAM contraint ou CSLAM . L'objectif est l'estimation précise des paramètres d'un objet présent dans la scène pour la réalité augmentée. Nous proposons pour cela d'inclure, dans une méthode d'ajustement de faisceaux incrémental, les paramètres de l'objet au même titre que les poses caméras et les points 3D nécessaires au CSLAM . Nous montrons, à travers l'exemple d'un modèle de plan 3D initialisé en ligne, que l'optimisation conjointe des paramètres permet, non seulement de contraindre les points 3D à se rapprocher du plan, mais également de contraindre le plan à se rapprocher des points 3D. Des expérimentations mettront en évidence la précision et le gain en temps de calcul de notre approche comparativement au CSLAM classique.
+
+	La détection des points d’intérêt sur les images est réalisée avec le détecteur de Harris et al, et leurappariement entre les images utilise le descripteur ZNCC Zero Mean Normalized Cross Correlation (qui a l’avantage d’être invariant à la luminosité).
 ## Fabien
 - URL : 1. http://eprints.lincoln.ac.uk/id/eprint/9566/1/mozos2008lncs_caepia.pdf
 		2. http://eprints.lincoln.ac.uk/id/eprint/9330/1/gil2009mva.pdf

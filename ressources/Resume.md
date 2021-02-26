@@ -12,7 +12,8 @@
 >Resume :
 
 ## Fabien
-- URL :
+- URL : http://eprints.lincoln.ac.uk/id/eprint/9566/1/mozos2008lncs_caepia.pdf
+		http://eprints.lincoln.ac.uk/id/eprint/9330/1/gil2009mva.pdf
 
 >Resume :
 

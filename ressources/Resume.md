@@ -4,7 +4,7 @@
 ## Guillaume
 - URL : https://hal.archives-ouvertes.fr/hal-00656550/document
 
->Resume :
+>Resume : Ce papier présente une méthode pour détecter de façonautomatique des objets. Les différentes explorations de la caméra dans le même environnement permettent de modéliser les objets détectés. Les expériences présentées ont permis de mettre en évidence les performances de la méthodedans un cadre réel de localisation en environnement intérieur avec apprentissage d’objets ayant été déplacés. Nous souhaitons  dans  le  cadre  de  la  généralisation  de  ces  travaux modéliser un environnement intérieur sujet à de nombreuses modifications, comme des ateliers d’usine ou descentres commerciaux, et maintenir une carte des lieux et des objets fréquemment observés. Nous voyons de nombreuses applications à ces travaux. Dans le cadre de scénarios mettant en scène une intéraction de l’utilisateur avec son  milieu,  il  est  primordial  de  comprendre  le  contexte dans lequel évolue la caméra et d’identifier les objets présents dans l’environnement : la détection et la reconnaissance des objets permet ainsi une meilleure compréhension de la scène. Nous souhaitons aussi améliorer les résultats de la reconnaissance de lieu et de la localisation métriqueen gérant les hypothèses de scène non statique. La connaissance d’objets de taille connue peut par la suite être utilisée pour corriger la dérive du facteur d’échelle. Enfin, la détection d’objets et de mouvements dans la scène peut être utile à des applications de réalité augmentée.
 
 ## Rémi
 - URL : https://www.irit.fr/~Sylvie.Chambon/PUBLICATIONS/GalesRapportMaster2007.pdf

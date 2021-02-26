@@ -10,7 +10,7 @@
 - URL : https://hal.archives-ouvertes.fr/hal-00989067/
 		https://www.irit.fr/~Sylvie.Chambon/PUBLICATIONS/GalesRapportMaster2007.pdf
 
->Resume : 
+>Resume :
 
 ## Fabien
 - URL : http://eprints.lincoln.ac.uk/id/eprint/9566/1/mozos2008lncs_caepia.pdf
@@ -20,6 +20,10 @@
 
 ## Zac
 
-- URL : https://hal.archives-ouvertes.fr/hal-00656572/document
+- URL1 : https://hal.archives-ouvertes.fr/hal-00656572/document
+- URL2 :https://hal.archives-ouvertes.fr/tel-01713128
 
->Resume :
+>Resume1 :
+
+
+>Resume2 :

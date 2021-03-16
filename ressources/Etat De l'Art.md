@@ -1,11 +1,15 @@
-La détection de points d’intérêts (ou coins) est, au même titre que la détection de contours, une étape préliminaire à de nombreux processus de vision par
+La détection de points d’intérêts est, au même titre que la détection de contours, une étape préliminaire à de nombreux processus de vision par
 ordinateur. Les points d’intérêts, dans une image, correspondent à des doubles discontinuités de la fonction d’intensités. Celles-ci peuvent être provoquées, comme pour les contours, par des discontinuités de la fonction de réflectance ou des discontinuités de profondeur. Ce sont par exemple : les coins, les jonctions en T ou les points de fortes variations de texture.
+
+
 
 le détecteur de Moravec (1980)
 L’idée du détecteur de Moravec est de considérer le voisinage d’un pixel (une fenêtre) et de déterminer les changements moyens de l’intensité dans le voisinage considéré lorsque la fenêtre se déplace dans diverses directions.
 
+
+
 Le détecteur de Harris (1988)
-Le détecteur de Moravec fonctionne dans un contexte limité. Il souffre en effet de nombreuses limitations. Harris et Stephen ont identifié certaines limitations et, en les corrigeant, en ont déduit un détecteur de coins très populaire : le détecteur de Harris
+Le détecteur de Moravec fonctionne dans un contexte limité. Les limtes de se detecteur sont nombreuses. Harris et Stephen ont identifié certaines limitations et, en les analisant et en les corrigeant, sont arrivés à un détecteur de coins très populaire : le détecteur de Harris
 
 SLAM
 

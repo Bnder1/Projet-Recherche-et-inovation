@@ -20,6 +20,8 @@
 
 \usepackage[cmex10]{amsmath}
 
+\usepackage{array}
+
 \usepackage{lipsum} % for filling with text (demo)
 
 % correct bad hyphenation here
@@ -102,9 +104,14 @@ The objective of our research team is to train on this technology and to add the
 
 
 \section{Introduction}
+The contemporary issue that we decide to address in this document is:
+
+How to reduce the risk and help blind people to better perceive the world around them?
+
 SLAM (Simultaneous Localization and Mapping) \cite{mozos2007interest} methods make it possible to estimate both the trajectory of a blind person and the structure of the world from data acquired from an on-board sensor. The goal is to produce from visual data of a dynamic scene a description usable by an information system: modeling of the static world, location of the human in this world, and how other mobile objects move there. An approach combining Segmentation by Clustering and Classification makes it possible to detect on the one hand static points taken into account in visual SLAM, and on the other hand groups of mobile points used to detect and follow the dynamic components of the scene. The overall approach is assessed on the basis of images acquired in an urban environment \cite{gil2010comparative}.
 
 \section{Project}
+Today people who are blind or with reduced vision use tools that are proven to be effective (white cane, brailles, guide dog). but these technologies make it possible to perceive the world in a limited way.
 There are technologies capable of reading documents, language support, technology miniaturization, counts the number of people, helps to see situations on screens, currency and face recognition, able to detect pedestrians vehicle and signage or again to driving assistance. This implementation already exists in the form of glasses produced by the company OrCam \cite{orcam_2021} or in the EVA project \cite{eva}.
 The objective of our research team is to train on this technology and to add the detection of dynamic objects. Calculation of the speed and estimation of the possibility of contact with the person or not.
 To meet our needs, we will use existing SLAM and DATMO (for Detection and Tracking of Moving Object) \cite{Pancham2011-11} technologies. In addition, we will implement Artificial Intelligence to perform model recognition from a collaborative database, allowing us to rapidly increase our datasets and offer a more efficient solution and implement more 'tools to increase the autonomy of blind and partially sighted people.
@@ -115,17 +122,64 @@ The EU-funded EVA project \cite{eva} has developed voice-activated glasses for t
 
 The EVA project \cite{eva} still contains many limitations such as a mandatory connection to a smartphone, the use of the smartphone speaker, constraint in a street with a lot of noise, it is also a very expensive technology.
 
-\begin{figure}[ht]
+\section{Application to our project}
+In this article, we consider that there may be moving objects in the human perceived world; despite this, we want to solve the problem of SLAM, and at the same time, estimate the state of each moving object. This also requires addressing the detection and tracking of these moving objects, while retaining the ability to detect a sufficient number of fixed landmarks in order to locate the human.
+
+\section{Achievements}
+To implement this project our team will have to design hardware but also software.
+
+\subsection{Hardware}
+
+We are going to use open source and accessible components, these are technologies that we already master. In addition, components such as batteries, headphones as well as cameras are easily implemented on a raspberry. An evolution is possible at the component level. The goal is to bring together the smallest and most ergonomic possible in one piece.
+
+\begin{itemize}
+  \item Hearing system: Bone conduction
+  \item Environmental sensor system: camera
+  \item Materials used: Carbon (lightness)
+  \item Power supply (24 hours of autonomy min)
+  \item Micro computer : Raspberry pi
+\end{itemize}
+
+\begin{table}[h]
+\center
+\begin{tabular}{|l|m{1cm}|c|m{1.7cm}|r|}
+  \hline
+  RaspberryPi&Processor Cores&Processor Speed & RAM & Price\\
+  \hline
+  Pi 4 & 4 & 1.5GHz &2GB, 4GB, 8GB SDRAM&83,99€\\
+  Pi Zero & 1 & 1GHz &512MB RAM&5,50€\\
+  Pi Pico & 2 & 133 MHz& 264KB SRAM&4,20€\\
+  \hline
+\end{tabular}
+\caption{List of Micro computer}
+\label{tab:listOfMicroComputer}
+\end{table}
+
+\begin{figure}[h]
 \centering
-\scalebox{0.6}{
+\scalebox{1}{
 \smartdiagram[circular diagram]{User moving,
   Identification, Calculation of collision, Warning}}
 \caption{Visual assistant operating diagram.}
 \end{figure}
 
-\section{Application to our project}
-In this article, we consider that there may be moving objects in the human perceived world; despite this, we want to solve the problem of SLAM, and at the same time, estimate the state of each moving object. This also requires addressing the detection and tracking of these moving objects, while retaining the ability to detect a sufficient number of fixed landmarks in order to locate the human.
+\subsection{Software}
+For the software part we will focus on containerization technologies. These technology will allow us to re-use existing algorithms like SLAM and DATMO. They are based on series of image analyse. First of all, SLAM detect the interest points, then thanks to a collaborative database, we identify all the objects present in the picture. Finally, DATMO calculate the speed of all incoming objects.
+\\
+\\
+With the localization of our glasses, we have the speed and the direction of the user. Our last homemade algorithm calculate the percentage of possibility of collision. If one or multiple objects are threatening the user, a precise warning is send to the user with a description of the threat.  
+\\
+Moreover, the use of containers allows us to deploy or modify them quickly.
+We will therefore be able to add containers for reading text, translating, etc.
+\\
+On the IA part, we will be able to rely on containers prepared by google, allowing us to save time and make it more feasible.
 
+\section{Validation}
+\subsection{Feasibility}
+This project use cheap and lightweight hardware so it's easy to make multiple embed system without having a high starting capital. For the software part we use existing technologies that we can easily bind together to match our needs. Considering the previous statements our project is simple to build and setup.
+
+\subsection{Usefulness}
+The embed system is designed to be discreet and to give information about the environment of the user. Blind people can use this object to simplify their interactions with the world. They use it to read text in front of us and even to detect logos. They can also use it to detect car or people moving around us to avoid accident.
 
 \section{Conclusion}
 

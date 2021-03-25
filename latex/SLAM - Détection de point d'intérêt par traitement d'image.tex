@@ -111,16 +111,16 @@ How to reduce the risk and help blind people to better perceive the world around
 SLAM (Simultaneous Localization and Mapping) \cite{mozos2007interest} methods make it possible to estimate both the trajectory of a blind person and the structure of the world from data acquired from an on-board sensor. The goal is to produce from visual data of a dynamic scene a description usable by an information system: modeling of the static world, location of the human in this world, and how other mobile objects move there. An approach combining Segmentation by Clustering and Classification makes it possible to detect on the one hand static points taken into account in visual SLAM, and on the other hand groups of mobile points used to detect and follow the dynamic components of the scene. The overall approach is assessed on the basis of images acquired in an urban environment \cite{gil2010comparative}.
 
 \section{Project}
-Today people who are blind or with reduced vision use tools that are proven to be effective (white cane, brailles, guide dog). but these technologies make it possible to perceive the world in a limited way.
-There are technologies capable of reading documents, language support, technology miniaturization, counts the number of people, helps to see situations on screens, currency and face recognition, able to detect pedestrians vehicle and signage or again to driving assistance. This implementation already exists in the form of glasses produced by the company OrCam \cite{orcam_2021} or in the EVA project \cite{eva}.
+Today people who are blind or with reduced vision use tools that are proven to be effective (white cane, brailles, guide dog). But these technologies make it possible to perceive the world in a limited way.
+There are technologies capable of reading documents \cite{neto_roberto_cam_reading_2014}, language support, technology miniaturization, counts the number of people, helps to see situations on screens, currency and face recognition, able to detect pedestrians vehicle and signage or again to driving assistance. This implementation already exists in the form of glasses produced by the company OrCam \cite{orcam_2021} or in the EVA project \cite{eva}.
 The objective of our research team is to train on this technology and to add the detection of dynamic objects. Calculation of the speed and estimation of the possibility of contact with the person or not.
 To meet our needs, we will use existing SLAM and DATMO (for Detection and Tracking of Moving Object) \cite{Pancham2011-11} technologies. In addition, we will implement Artificial Intelligence to perform model recognition from a collaborative database, allowing us to rapidly increase our datasets and offer a more efficient solution and implement more 'tools to increase the autonomy of blind and partially sighted people.
-In 2016, JAMA Ophthalmology \cite{adrienne_w.scott_2016} conducted a study involving 12 legally blind participants to assess the usefulness of a portable artificial vision device (OrCam) for visually impaired patients. The results showed that the OrCam \cite{orcam_2021} device would improve the patient's ability to perform tasks simulating those of daily living, such as reading a message on an electronic device, a newspaper article or a menu.
-The Orcam \cite{orcam_2021} project still contains many limitations such as reading non-handwritten text as well as battery autonomy.
+In 2016, JAMA Ophthalmology \cite{adrienne_w.scott_2016} conducted a study involving 12 legally blind participants to assess the usefulness of a portable artificial vision device (OrCam) for visually impaired patients. The results showed that the OrCam device would improve the patient's ability to perform tasks simulating those of daily living, such as reading a message on an electronic device, a newspaper article or a menu.
+The Orcam project still contains many limitations such as reading non-handwritten text as well as battery autonomy.
  
-The EU-funded EVA project \cite{eva} has developed voice-activated glasses for the visually impaired. EVA, the acronym for "Extended Visual Assistant" or "Extended Visual Assistant", is based on a machine vision system that recognizes objects, text and signs and orally describes what it sees. These glasses have the advantages of being light and discreet.
+The EU-funded EVA project has developed voice-activated glasses for the visually impaired. EVA, the acronym for "Extended Visual Assistant" or "Extended Visual Assistant", is based on a machine vision system that recognizes objects, text and signs and orally describes what it sees. These glasses have the advantages of being light and discreet.
 
-The EVA project \cite{eva} still contains many limitations such as a mandatory connection to a smartphone, the use of the smartphone speaker, constraint in a street with a lot of noise, it is also a very expensive technology.
+The EVA project still contains many limitations such as a mandatory connection to a smartphone, the use of the smartphone speaker, constraint in a street with a lot of noise, it is also a very expensive technology.
 
 \section{Application to our project}
 In this article, we consider that there may be moving objects in the human perceived world; despite this, we want to solve the problem of SLAM, and at the same time, estimate the state of each moving object. This also requires addressing the detection and tracking of these moving objects, while retaining the ability to detect a sufficient number of fixed landmarks in order to locate the human.
@@ -128,6 +128,9 @@ In this article, we consider that there may be moving objects in the human perce
 \section{Achievements}
 To implement this project our team will have to design hardware but also software.
 
+The hardware part will allow us to work on the physical parts, the choice of components (the majority open-source) as well as the design.
+
+The software part will take care of embedding the SLAM and AI functionalities
 \subsection{Hardware}
 
 We are going to use open source and accessible components, these are technologies that we already master. In addition, components such as batteries, headphones as well as cameras are easily implemented on a raspberry. An evolution is possible at the component level. The goal is to bring together the smallest and most ergonomic possible in one piece.
@@ -163,6 +166,8 @@ We are going to use open source and accessible components, these are technologie
 \caption{Visual assistant operating diagram.}
 \end{figure}
 
+As we can see in the diagram above, each part of the cycle can be represented with a physic part. First, we got the user movement that is obviously made by the user. Then the identification is possible thanks to the cameras and the microprocessor. This part is also capable of making all calculations we need. Finally, the warning is sent with the bone conduction system.
+
 \subsection{Software}
 For the software part we will focus on containerization technologies. These technology will allow us to re-use existing algorithms like SLAM and DATMO. They are based on series of image analyse. First of all, SLAM detect the interest points, then thanks to a collaborative database, we identify all the objects present in the picture. Finally, DATMO calculate the speed of all incoming objects.
 \\
@@ -186,7 +191,7 @@ The embed system is designed to be discreet and to give information about the en
 In this article we have presented a system that effectively addresses the problem of navigation in dynamic environments for blind people.
 
 We have also achieved the state of the art at the level of our competitors in order to clear their limits.
-We have therefore defined the main technical evolutions that we are going to implement in our beta product.
+We have therefore defined the main technical evolution's that we are going to implement in our beta product.
 
 The goal is to release a first product with features that our competitors already have (Proof of Concept).
 

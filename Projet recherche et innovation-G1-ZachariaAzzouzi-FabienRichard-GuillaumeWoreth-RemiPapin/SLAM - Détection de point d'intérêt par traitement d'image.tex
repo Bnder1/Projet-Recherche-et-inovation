@@ -1,0 +1,249 @@
+ \documentclass[conference,compsoc]{IEEEtran}
+\usepackage{smartdiagram}
+% Some/most Computer Society conferences require the compsoc mode option,
+% but others may want the standard conference format.
+%
+% If IEEEtran.cls has not been installed into the LaTeX system files,
+% manually specify the path to it like:
+% \documentclass[conference,compsoc]{../sty/IEEEtran}
+% *** CITATION PACKAGES ***
+%
+\ifCLASSOPTIONcompsoc
+  % IEEE Computer Society needs nocompress option
+  % requires cite.sty v4.0 or later (November 2003)
+  \usepackage[nocompress]{cite}
+\else
+  % normal IEEE
+  \usepackage{cite}
+\fi
+
+
+\usepackage[cmex10]{amsmath}
+
+\usepackage{array}
+
+\usepackage{lipsum} % for filling with text (demo)
+
+% correct bad hyphenation here
+\hyphenation{op-tical net-works semi-conduc-tor}
+
+% Keywords command
+\providecommand{\keywords}[1]
+{
+  \small	
+  \textbf{\textit{Keywords---}} #1
+}
+
+\makeatletter
+\newcommand{\linebreakand}{%
+  \end{@IEEEauthorhalign}
+  \hfill\mbox{}\par
+  \mbox{}\hfill\begin{@IEEEauthorhalign}
+}
+\makeatother
+
+\begin{document}
+%
+% paper title
+% Titles are generally capitalized except for words such as a, an, and, as,
+% at, but, by, for, in, nor, of, on, or, the, to and up, which are usually
+% not capitalized unless they are the first or last word of the title.
+% Linebreaks \\ can be used within to get better formatting as desired.
+% Do not put math or special symbols in the title.
+\title{Assistant for visually impaired person}
+
+
+% author names and affiliations
+% use a multiple column layout for up to three different
+% affiliations
+\author{\IEEEauthorblockN{Zacharia Azzouzi}
+\IEEEauthorblockA{School of CESI\\Computer Engineering\\
+Lyon, France\\
+Email: zacharia.azzouziclausel@viacesi.fr}
+\and
+\IEEEauthorblockN{Rémi Papin}
+\IEEEauthorblockA{School of CESI\\Computer Engineering\\
+Lyon, France\\
+Email: remi.papin@viacesi.fr}
+\linebreakand
+\IEEEauthorblockN{Fabien Richard}
+\IEEEauthorblockA{School of CESI\\Computer Engineering\\
+Lyon, France\\
+Email: fabien.richard1@viacesi.fr}
+\and
+\IEEEauthorblockN{Guillaume Woreth}
+\IEEEauthorblockA{School of CESI\\Computer Engineering\\
+Lyon, France\\
+Email: guillaume.woreth@viacesi.fr}
+}
+\maketitle
+
+% As a general rule, do not put math, special symbols or citations
+% in the abstract
+\begin{abstract}
+In the context of helping the visually impaired this document will talk about technologies capable of reading documents, counting peoples, detecting pedestrians, vehicles and signage. We compare our project with existing implementation like glasses produced by the company OrCam or the EVA project.
+The objective of our research team is to train on this technology and to add the detection of dynamic objects. Calculation of the speed and estimation of the possibility of interaction with other persons or not.
+\end{abstract}We are going to offer two versions of our final product, the first more affordable in order to reach a very large audience and a second a little more advanced for people with means of obtaining these glasses. Thanks to the multilingual management, our goal is to reach not only France, but a global audience.
+
+
+\hspace{10pt}
+
+% keywords
+\keywords{Computer vision, SLAM, DATMO, MOT, Visual Assistant}
+
+
+
+% For peer review papers, you can put extra information on the cover
+% page as needed:
+% \ifCLASSOPTIONpeerreview
+% \begin{center} \bfseries EDICS Category: 3-BBND \end{center}
+% \fi
+%
+% For preview papers, this IEEEtran command inserts a page break and
+% creates the second title. It will be ignored for other modes.
+\IEEEpeerreviewmaketitle
+
+
+
+\section{Introduction}
+The contemporary issue that we decide to address in this document is:
+
+How to reduce the risk and help blind people to better perceive the world around them?
+
+SLAM (Simultaneous Localization and Mapping) \cite{mozos2007interest} methods make it possible to estimate both the trajectory of a blind person and the structure of the world from data acquired from an on-board sensor. The goal is to produce from visual data of a dynamic scene a description usable by an information system: modeling of the static world, location of the human in this world, and how other mobile objects move there. An approach combining Segmentation by Clustering and Classification makes it possible to detect on the one hand static points taken into account in visual SLAM, and on the other hand groups of mobile points used to detect and follow the dynamic components of the scene. The overall approach is assessed on the basis of images acquired in an urban environment \cite{gil2010comparative}. First, we will see the existing solutions as well as their limitations. Then we will explain why our project is an innovation with the list of functionalities from a hardware and software point of view. Finally, we will conclude with the technical validation of our project.
+
+\section{Project}
+Today people who are blind or with reduced vision use tools that are proven to be effective (white cane, brailles, guide dog). But these technologies make it possible to perceive the world in a limited way.
+There are technologies capable of reading documents \cite{neto_roberto_cam_reading_2014}, language support, technology miniaturization, counts the number of people, helps to see situations on screens, currency and face recognition, able to detect pedestrians, vehicles and signage or again to driving assistance. This implementation already exists in the form of glasses produced by the company OrCam \cite{orcam_2021} or in the EVA project \cite{eva}.
+The objective of our research team is to train on this technology and to add the detection of dynamic objects. Calculation of the speed and estimation of the possibility of contact with the person or not.
+To meet our needs, we will use existing SLAM and DATMO (for Detection and Tracking of Moving Object) \cite{Pancham2011-11} technologies. In addition, we will implement Artificial Intelligence to perform model recognition from a collaborative database, allowing us to rapidly increase our datasets and offer a more efficient solution and implement more 'tools to increase the autonomy of blind and partially sighted people.
+In 2016, JAMA Ophthalmology \cite{adrienne_w.scott_2016} conducted a study involving 12 legally blind participants to assess the usefulness of a portable artificial vision device (OrCam) for visually impaired patients. The results showed that the OrCam device would improve the patient's ability to perform tasks simulating those of daily living, such as reading a message on an electronic device, a newspaper article or a menu.
+The Orcam project still contains many limitations such as reading non-handwritten text as well as battery autonomy.
+ 
+The EU-funded EVA project has developed voice-activated glasses for the visually impaired. EVA, the acronym for "Extended Visual Assistant" or "Extended Visual Assistant", is based on a machine vision system that recognizes objects, text and signs and orally describes what it sees. These glasses have the advantages of being light and discreet.
+
+The EVA project still contains many limitations such as a mandatory connection to a smartphone, the use of the smartphone speaker, constraint in a street with a lot of noise, it is also a very expensive technology.
+
+\section{Application to our project}
+In this article, we consider that there may be moving objects in the human perceived world; despite this, we want to solve the problem of SLAM, and at the same time, estimate the state of each moving object. This also requires addressing the detection and tracking of these moving objects, while retaining the ability to detect a sufficient number of fixed landmarks in order to locate the human.
+
+\section{Our solution}
+To implement this project our team will have to design hardware but also software. The main goal of our project is to implement more features than our concurrent.
+
+We have therefore defined the main technical evolution's that we are going to implement in our beta product.
+
+The goal is to release a first product with features that our competitors already have (Proof of Concept).
+
+This first product (Beta), will have the following features:
+\begin{itemize}
+\item An on-board system which attaches to glasses and does not require a smartphone
+\item Bone conduction headphones.
+\item Marker in space and vocal guide.
+\item Voice and gestural interaction with the product.
+\end{itemize}
+
+Secondly, after having produced our beta product, we will focus on producing a range of products (three in number):
+\begin{itemize}
+\item Product 1: this product contains all the basic functionalities (SLAM / Document reading (multilingual))
+\item Product 2: this product contains all the basic functionalities as well as more advanced functionalities:
+\begin{itemize}
+    \item Integrates the functions of version 1;
+    \item Languages and text translation;
+    \item Face emotion;
+    \item Brand identification and Identify popular places.
+    \end{itemize}
+\end{itemize}
+
+The hardware part will allow us to work on the physical parts, the choice of components (the majority open-source) as well as the design.
+
+The software part will take care of embedding the SLAM and AI functionalities
+\subsection{Hardware}
+
+We are going to use open source and accessible components, these are technologies that we already master. In addition, components such as batteries, headphones as well as cameras are easily implemented on a raspberry. An evolution is possible at the component level. The goal is to bring together the smallest and most ergonomic possible in one piece.
+
+\begin{itemize}
+  \item Hearing system: Bone conduction
+  \item Environmental sensor system: camera
+  \item Materials used: Carbon (lightness)
+  \item Power supply (24 hours of autonomy min)
+  \item Micro computer : Raspberry pi
+\end{itemize}
+
+\begin{table}[h]
+\center
+\begin{tabular}{|l|m{1cm}|c|m{1.7cm}|r|}
+  \hline
+  RaspberryPi&Processor Cores&Processor Speed & RAM & Price\\
+  \hline
+  Pi 4 & 4 & 1.5GHz &2GB, 4GB, 8GB SDRAM&83,99€\\
+  Pi Zero & 1 & 1GHz &512MB RAM&5,50€\\
+  Pi Pico & 2 & 133 MHz& 264KB SRAM&4,20€\\
+  \hline
+\end{tabular}
+\caption{List of Micro computer}
+\label{tab:listOfMicroComputer}
+\end{table}
+
+\begin{figure}[h]
+\centering
+\scalebox{1}{
+\smartdiagram[circular diagram]{1. User moving,
+  Identification, Calculation of collision, Warning}}
+\caption{Visual assistant operating diagram.}
+\end{figure}
+
+As we can see in the diagram above, each part of the cycle can be represented with a physic part. First, we got the user movement that is obviously made by the user. Then the identification is possible thanks to the cameras and the microprocessor. This part is also capable of making all calculations we need. Finally, the warning is sent with the bone conduction system.
+
+\subsection{Software}
+For the software part we will focus on containerization technologies. These technology will allow us to re-use existing algorithms like SLAM and DATMO. They are based on series of image analyse. First of all, SLAM detect the interest points, then thanks to a collaborative database, we identify all the objects present in the picture. Finally, DATMO calculate the speed of all incoming objects.
+\\
+\\
+With the localization of our glasses, we have the speed and the direction of the user. Our last homemade algorithm calculate the percentage of possibility of collision. If one or multiple objects are threatening the user, a precise warning is send to the user with a description of the threat.  
+\\
+Moreover, the use of containers allows us to deploy or modify them quickly.
+We will therefore be able to add containers for reading text, translating, etc.
+\\
+On the IA part, we will be able to rely on containers prepared by google, allowing us to save time and make it more feasible.
+
+\subsection{Technical architecture}
+For the realization of the technical part we will orient ourselves towards a python code of our own manufacture using the OpenCV library which encapsulates a large library for image processing.
+
+To achieve the real-time SLAM of our camera, we will first process the image before using it.
+First of all, we will therefore use our camera to retrieve a video stream in real time. in the following we will spread the histogram so as to use the whole range of values of the pixels. Carry out a median blur for the treatment of the noise, work on the net, then use the harris detector in order to carry out edge detection.
+
+Environment informations and distance detections are based on SLAM technology. The project use the world reconstructed in 3D by the SLAM to compute distance between the camera and obstacle in front of the user.
+
+Our approach is based on LINEMOD, an efficient method that exploits both depth and color images to capture the appearance and 3D shape of the object in a set of templates covering different views of an object. Because the viewpoint of each template is known, it provides a coarse estimate of the pose of the object when it is detected.
+
+Then we can build a 3D map environment with all the objects surrounding the user. With this map, we are now able to determine the distance of each object from the user. Moreover, from the precedents images, we can determine the speed of moving objects by using their coordinate from each 3D map. 
+
+For the sentiment detection, face detection, brand and popular place part we will rely on the Google AI image API, allowing us to retrieve this information.
+
+\section{Validation}
+\subsection{Feasibility}
+This project use cheap and lightweight hardware so it's easy to make multiple embed system without having a high starting capital. For the software part we use existing technologies that we can easily bind together to match our needs. Considering the previous statements our project is simple to build and setup.
+
+\subsection{Usefulness}
+The embed system is designed to be discreet and to give information about the environment of the user. Blind people can use this object to simplify their interactions with the world. They use it to read text in front of us and even to detect logos. They can also use it to detect car or people moving around us to avoid accident.
+This equipment saves in autonomy and time for the user.
+
+\section{Conclusion}
+
+In this article we have presented a system that effectively addresses the problem of navigation in dynamic environments for blind people. 
+
+We have also achieved the state of the art at the level of our competitors in order to clear their limits.
+
+We found lightweight equipment capable of running our different algorithms in order to produce the most suitable and efficient solution possible.
+For people with sight problems we have found fast algorithms capable of providing information in real time as well as competing with our various rivals on the subject.
+We are going to offer two versions of our final product, the first more affordable in order to reach a very large audience and a second a little more advanced for people with means of obtaining these glasses. Thanks to the multilingual management, our goal is to reach not only France, but a global audience.
+
+
+
+\bibliographystyle{IEEEtran}
+%\nocite{*} % to show every citations, even the ones which are not cited
+\bibliography{biblio}
+\end{document}
+
+
+
+

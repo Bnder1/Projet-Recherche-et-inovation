@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "retd-cesi",
+  "private_key_id": "a6f771c89d8a7982612ecbb9350b0067edba36da",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCvpGvgaDaNqnvO\naRMKgMcoMh25Gg1kEoZt1FZ0QBoKXc6NSPY6A0a14D8HaUvFyj3f+yVC+0v2D4lX\nfYbOOec/wZEZ9mEhBF6o+TNfnlzGiBhJ5QWAJJUV4AYHVufXu2dx0tCjO5SitKMr\ncezKwFIUb6jYm6FXLwNqO5cVvqQHen8veI0JBAs3+1CMa+Tj7Dc/KrOAvNo/jKTa\ntq/cAsCiBVw3Na3msWk8ooBJ2kPOamOhwyow+sn2pj48udJD1AOBSUZq82f7VFVI\nN2ECEZ0wO8Vz6vmLzArGjJF1XBfHu6vvq/Wi+jImy7CBAdKgESKG0j8GKibemuU+\ndDSQM03vAgMBAAECggEAAmuDBfWZnly4Jjl0MQHXITFnsIw2Emu+Z/uGRSDv4joF\n/U6pdMtO2OoeUBTe/Mcub32vYvUkEUJNrw3AvlgquCklOfPu8TNUQVqD6CjbV1JX\n8AM3UK90ARVPanffKcrrOpdnYD2hwN/3b7uzqEqCtv/aVEhtkRAaQu2nki1ehIiU\nhtzoeDTVYPy0qYyW9s1HE7Jjz6Kue6YkOskfWMyH6si6d36mLMlmPacCRGuwuqoO\n9JGq2YEE0eNwJZPW5kwqa5S8hmFjBp5Z4r5+IcULHYXtrQ04ByiKOylC5NiIUiDT\nSccayb1YQKbL2UwlfMO9Dxk9I7ZM/OvnIJzs17DKwQKBgQDs2EyhMSGDPWlODsYS\nBbJfOZ1dBLi9GNPLT7vWrx96/oWJfZLnckv2D4sFad0aMzww/LNVdn5P9Vc8BqZ3\nJkVfMEUzjxDF4YrioXLz7AvtSaFdfd9Gd3MBLXUnorU9Ywl3FU9M31aO5AYgS/Mb\n1dDjEqn3EYu9shlkzIpe+4eKLwKBgQC92PdN4MIKbOIRXzARpfgekSKJSWxaLtPf\n5u7B5qXOUOQYZ/OGNFyvg2UpNwHKN4mMWDL4GUcQaBohsFvO3QDHdGw5/beaLlw6\nuEEGUbd+lDrxiQtn1WFtrHc0cYZgQ1iRMkDDXpX+sNRqTJ9verfgImBsClc2bk7J\npL2P69RIQQKBgDaUtjwjdWSoP19UukKm+29EeMZZ8zToxs5Axrn3y5ptk1qXDMa3\nqVfARzptJh4GlqV3ZuCYGQ3WLU9Q/QXSVQRVvGzgWG4xxu7pY/Ngf3Mkl8JS4qR7\nnI416pzCu1+1NhYyW/8MLQdq9xp0Rkcw5B2gTHj6myiRJZb8KBsxfg/TAoGBAIAf\nXf9D8RBiHUuGBwXSEZpnbnxifep68eiIjJd1lm6fruA9v17SFb8pmOrwwZd8VarO\nl09Sl+AdsY0M3VjFU9JH4wZcET3PjdTfJpsiKQkW9pStXXIs0nzWyPguqXZr3OjY\nllaDjgz9v80hevQcSN3NtW8Up3kHhsqVEI2BpZlBAoGAYjDq9yH5t5hVaDfhbMMw\nG9Nj+aJjdhJtThH09FlyBm7PCYPUCTdkDj9C7B7Sl0fWeHvAPG9tVRl0Qaabn0ro\ntFb97DIfW6VYhRI0oVbc+kN+PCfLqGk0FZtQ+rk58QjLa15A/gu9HVpatKi+w3AJ\nNbOn8ptpxodT/AwRsw415dw=\n-----END PRIVATE KEY-----\n",
+  "client_email": "retd-cesi@retd-cesi.iam.gserviceaccount.com",
+  "client_id": "108676018071107572103",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/retd-cesi%40retd-cesi.iam.gserviceaccount.com"
+}

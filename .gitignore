@@ -1,7 +1,7 @@
 
 .DS_Store
 *.pyc
-
+python/credentials/*
 python/recorded/*
 latex/bare_conf_compsoc.aux
 
